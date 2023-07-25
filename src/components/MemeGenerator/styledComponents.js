@@ -20,6 +20,10 @@ export const Heading = styled.h1`
 export const MemeGeneratorContainer = styled.div`
   display: flex;
   flex-direction: column;
+  @media screen and (min-width: 768px) {
+    flex-direction: row;
+    justify-content: space-between;
+  }
 `
 
 export const MemeContainer = styled.div`
@@ -33,7 +37,7 @@ export const MemeContainer = styled.div`
   justify-content: space-between;
 `
 
-export const MemeText = styled.h1`
+export const MemeText = styled.p`
   font-family: 'Open Sans';
   color: #ffffff;
   font-size: ${props => props.fontSize}px;

@@ -83,7 +83,7 @@ class MemeGenerator extends Component {
       <MainContainer>
         <Heading>Meme Generator</Heading>
         <MemeGeneratorContainer>
-          <MemeContainer testid="meme" bgImage={imageUrl}>
+          <MemeContainer data-testid="meme" bgImage={imageUrl}>
             <MemeText fontSize={fontSize}>{topText}</MemeText>
             <MemeText fontSize={fontSize}>{bottomText}</MemeText>
           </MemeContainer>
